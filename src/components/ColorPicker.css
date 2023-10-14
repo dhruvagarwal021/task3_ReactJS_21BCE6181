@@ -1,0 +1,60 @@
+
+.color-picker {
+    display: flex;
+    margin-top: -30px;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  button {
+    background-color: rgb(18, 182, 18);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .color-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    background: #f0f0f0;
+    min-height: 60%;
+    min-width: 60%;
+  }
+  
+  .color {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .color:hover {
+    background: var(--color);
+  }
+  
+  @media (max-width: 768px) {
+    .color-list {
+      margin-left: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .color-list {
+      flex-direction: column;
+      max-width: 100%;
+    }
+    .color {
+      width: 100px;
+      height: 30px;
+      margin: 5px;
+    }
+  }
+  
